@@ -18,6 +18,7 @@ textarea {
   border-radius: 15px;
   border: 2px solid #21a4d9;
   box-shadow: 1px 1px 1px #999;
+  display:flex;
 }
 
 
@@ -89,7 +90,10 @@ nav {
 .ul2 {
   list-style-type: square;
 }
-/* ****************************Media********************** */
 
-@media screen and (min-width: 500px) {
+/* **************Media Mobile ******************/
+@media screen and (min-width: 600px) {
+    body {
+        display: grid;
+    }
 }
