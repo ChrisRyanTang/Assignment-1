@@ -3,15 +3,16 @@ body {
   font-family: "Raleway", sans-serif;
   background-color: #bd8b9c;
   color: #105c7b;
+  display: flex;
 }
+
+
 
 textarea {
   font-size: 0.8rem;
   letter-spacing: 1px;
-}
-
-textarea {
-  padding: 10px;
+  padding: 5%;
+  padding-right: 70%;
   max-width: 100%;
   line-height: 1.5;
   border-radius: 15px;
@@ -19,6 +20,18 @@ textarea {
   box-shadow: 1px 1px 1px #999;
 }
 
+
+/* ********** Footer **********************/
+img {
+    height: 50px;
+    outline: none;
+    cursor:pointer;
+}
+
+/* ******************** My Notes *************************/
+
+
+/* ********************* Buttons*************** */
 .button1 {
   border: 0;
   line-height: 2.5;
@@ -28,6 +41,7 @@ textarea {
   color: #fff;
   border-radius: 10px;
   background-color: #176992;
+  cursor:pointer;
 }
 .button2 {
   border: 0;
@@ -38,6 +52,7 @@ textarea {
   color: #fff;
   border-radius: 10px;
   background-color: #062c40;
+  cursor:pointer;
 }
 
 .button3 {
@@ -49,6 +64,7 @@ textarea {
   color: #fff;
   border-radius: 10px;
   background-color: #235842;
+  cursor:pointer;
 }
 .button4 {
   border: 0;
@@ -59,6 +75,7 @@ textarea {
   color: #fff;
   border-radius: 10px;
   background-color: #b02d16;
+  cursor:pointer;
 }
 /* ***************************NAV******************** */
 nav {
