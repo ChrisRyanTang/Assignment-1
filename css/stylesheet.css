@@ -2,6 +2,21 @@
 body {
   font-family: "Raleway", sans-serif;
   background-color: #bd8b9c;
+  color: #105c7b;
+}
+
+textarea {
+  font-size: 0.8rem;
+  letter-spacing: 1px;
+}
+
+textarea {
+  padding: 10px;
+  max-width: 100%;
+  line-height: 1.5;
+  border-radius: 15px;
+  border: 2px solid #21a4d9;
+  box-shadow: 1px 1px 1px #999;
 }
 
 .button1 {
@@ -44,6 +59,18 @@ body {
   color: #fff;
   border-radius: 10px;
   background-color: #b02d16;
+}
+/* ***************************NAV******************** */
+nav {
+  color: #105c7b;
+}
+
+.ul1 {
+  list-style-type: none;
+}
+
+.ul2 {
+  list-style-type: square;
 }
 /* ****************************Media********************** */
 
