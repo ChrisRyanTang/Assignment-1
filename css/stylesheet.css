@@ -3,21 +3,28 @@ body {
   font-family: "Raleway", sans-serif;
   background-color: #bd8b9c;
   color: #105c7b;
-  
+  height: 100vh;
 }
 
 main {
   display: grid;
-  grid-template-columns: 1fr 3fr;
-  grid-column-start: 1px;
-  grid-column-end: 50px;
-  border: 2px solid black;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: 1fr;
+}
+
+aside {
+  grid-column: 1 / span 1;
+  padding: 1rem;
+  background-color: #f750ce;
+}
+
+section {
+  grid-column: 2 / span 4;
+  padding: 1rem;
+  text-align: center;
 }
 
 /* ***************Body Grid and Flex********** */
-
-
-
 
 /* ********Text Area*************** */
 
@@ -31,22 +38,30 @@ textarea {
   border-radius: 15px;
   border: 2px solid #21a4d9;
   box-shadow: 1px 1px 1px #999;
-  display:flex;
+  display: flex;
+}
+
+/* ********** Footer **********************/
+
+footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
 }
 
 
-/* ********** Footer **********************/
-img {
-    height: 50px;
-    outline: none;
-    cursor:pointer;
+footer img {
+  display: inline-block;
+  height: 50px;
+  outline: none;
+  cursor: pointer;
 }
 
 /* ******************** My Notes *************************/
 
-
 /* ********************* Buttons*************** */
-.button1 {
+button {
   border: 0;
   line-height: 2.5;
   padding: 0 10px;
@@ -54,50 +69,39 @@ img {
   text-align: center;
   color: #fff;
   border-radius: 10px;
+  cursor: pointer;
+}
+
+
+.button1 {
   background-color: #176992;
-  cursor:pointer;
 }
 .button2 {
-  border: 0;
-  line-height: 2.5;
-  padding: 0 10px;
-  font-size: 0.9rem;
-  text-align: center;
-  color: #fff;
-  border-radius: 10px;
   background-color: #062c40;
-  cursor:pointer;
 }
 
 .button3 {
-  border: 0;
-  line-height: 2.5;
   padding: 0 13px;
-  font-size: 0.9rem;
-  text-align: center;
-  color: #fff;
-  border-radius: 10px;
   background-color: #235842;
-  cursor:pointer;
 }
 .button4 {
-  border: 0;
-  line-height: 2.5;
   padding: 0 15px;
-  font-size: 0.9rem;
-  text-align: center;
-  color: #fff;
-  border-radius: 10px;
   background-color: #b02d16;
-  cursor:pointer;
 }
+
 /* ***************************NAV******************** */
 nav {
   color: #105c7b;
 }
 
 .ul1 {
+  display: flex;
+  justify-content: right;
   list-style-type: none;
+}
+
+li {
+  margin: 5px;
 }
 
 .ul2 {
@@ -105,8 +109,35 @@ nav {
 }
 
 /* **************Media Mobile ******************/
-@media screen and (min-width: 600px) {
-   body {
-    
-   }
+@media screen and (max-width: 600px) {
+  main {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, 1fr);
+  }
+
+  aside {
+    display: none;
+  }
+
+  section {
+    grid-column: 1 / span 1;
+    grid-row: 1 / span 2;
+    padding: 1rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  main {
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 1fr;
+  }
+
+  aside {
+    display: block;
+  }
+
+  section {
+    grid-column: 2 / span 4;
+    padding: 1rem;
+  }
 }
