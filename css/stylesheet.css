@@ -10,9 +10,12 @@ main {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   grid-template-rows: 1fr;
+  height: 100vh;
+  margin: -1%;
 }
 
 aside {
+  padding: 10px;
   grid-column: 1 / span 1;
   background-color: #d9bfc9;
 }
@@ -63,8 +66,9 @@ textarea {
   display: flex;
   justify-content: space-between;
   margin: 10px;
-  width: 98%;
-  /* position: relative; */
+  margin-left: -1px;
+  width: 99.5%;
+  position: relative;
 }
 
 .grid-buttons2 {
