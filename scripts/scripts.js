@@ -13,3 +13,13 @@ function darkTheme(e) {
 }
 
 darkthemebutt.addEventListener("click", darkTheme);
+
+function changeText() {
+    if (darkthemebutt.textContent === "Dark theme") {
+        darkthemebutt.textContent = "Light theme";
+    } else {
+        darkthemebutt.textContent = "Dark theme";
+    }
+}
+
+darkthemebutt.addEventListener("click", changeText);
