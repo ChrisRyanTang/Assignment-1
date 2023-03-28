@@ -10,7 +10,7 @@ main {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   grid-template-rows: 1fr;
-  height: 100vh;
+  height: auto;
   margin: -1%;
 }
 
@@ -42,6 +42,7 @@ aside h1 {
   width: 100%;
   margin-left: 82px;
 }
+
 /* ********Text Area*************** */
 
 textarea {
@@ -109,7 +110,7 @@ button {
 .button1 {
   background-color: #176992;
 }
-.button2 {
+#button2 {
   background-color: #062c40;
 }
 
@@ -124,7 +125,7 @@ button {
 }
 
 /* ***************************NAV******************** */
-nav {
+.nav-bar {
   color: #105c7b;
 }
 
@@ -141,6 +142,21 @@ li {
 .ul2 {
   text-align: left;
   list-style-type: square;
+}
+/* *****************DARK THEME******************************* */
+
+.darktheme {
+  background-color: #18122B;
+  color: whitesmoke;
+}
+
+.aside-darktheme {
+  background-color: #062c40;
+  color: whitesmoke;
+}
+
+.navdark {
+  color:whitesmoke;
 }
 
 /* **************Media Mobile ******************/

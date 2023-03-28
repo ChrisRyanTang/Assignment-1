@@ -9,16 +9,16 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
-    <script href="scripts/scripts.js" defer></script>
+    <script src="scripts/scripts.js" defer></script>
     <title>Assignment1</title>
 </head>
 
 <body>
     <div class="container">
         <main>
-            <aside>
+            <aside id="left-side">
                 <h1>My Notes</h1>
-                <nav>
+                <nav class="nav-bar">
                     <ul class="ul2">
                         <li>note one</li>
                         <li>note two</li>
@@ -27,15 +27,15 @@
             </aside>
             <div class="main-section">
                 <h1>Take Better Notes</h1>
-                <nav>
+                <nav class="nav-bar">
                     <ul class="ul1">
                         <li>About</li>
                         <li>Docs</li>
                     </ul>
                 </nav>
                 <div class="grid-buttons">
-                    <button class="button1" type="button">New Note</button>
-                    <button class="button2" type="button">Dark theme</button>
+                    <button class="button1">New Note</button>
+                    <button id="button2">Dark theme</button>
                 </div>
                 <div>
                     <textarea id="story" name="story" rows="5">
@@ -43,8 +43,8 @@
         </textarea>
                 </div>
                 <div class="grid-buttons2">
-                    <button class="button3" type="button">Save</button>
-                    <button class="button4" type="button">Cancel</button>
+                    <button class="button3">Save</button>
+                    <button class="button4">Cancel</button>
                 </div>
             </div>
         </main>
