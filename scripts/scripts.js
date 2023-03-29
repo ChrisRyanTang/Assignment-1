@@ -27,21 +27,20 @@ darkthemebutt.addEventListener("click", changeText);
 let cancelbutton = document.querySelector("#button4");
 let textArea = document.querySelector("#story");
 let savebutton = document.querySelector("#button3");
+let noteToggle = document.querySelector("#button1");
 
-function hideText() {
-    if (cancelbutton.style.display === "none" && textArea.style.display === "none" && savebutton.style.display === "none") {
-        cancelbutton.style.display = "block";
-        textArea.style.display = "block";
-        savebutton.style.display = "block";
+function hideText(e) {
+    if (e.target.tagName === "BUTTON") {
+        cancelbutton.classList.toggle("hidden-content");
+        textArea.classList.toggle("hidden-content");
+        savebutton.classList.toggle("hidden-content");
     } else {
-        cancelbutton.style.display = "none";
-        textArea.style.display = "none";
-        savebutton.style.display = "none";
+        noteToggle.classList.toggle("show-content");
     }
+
+
 }
 
 cancelbutton.addEventListener("click", hideText);
-
-
-
+noteToggle.addEventListener("click", hideText);
 

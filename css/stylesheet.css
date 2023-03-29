@@ -159,6 +159,16 @@ li {
   color:whitesmoke;
 }
 
+/* *********************Hidden ***************************/
+
+.hidden-content {
+  display: none;
+}
+
+.show-content {
+  display: block;
+}
+
 /* **************Media Mobile ******************/
 @media screen and (max-width: 600px) {
   main {
