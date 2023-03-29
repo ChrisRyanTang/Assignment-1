@@ -107,19 +107,19 @@ button {
   cursor: pointer;
 }
 
-.button1 {
+#button1 {
   background-color: #176992;
 }
 #button2 {
   background-color: #062c40;
 }
 
-.button3 {
+#button3 {
   padding: 0 13px;
   margin-right: 10px;
   background-color: #235842;
 }
-.button4 {
+#button4 {
   padding: 0 15px;
   background-color: #b02d16;
 }

@@ -23,3 +23,25 @@ function changeText() {
 }
 
 darkthemebutt.addEventListener("click", changeText);
+
+let cancelbutton = document.querySelector("#button4");
+let textArea = document.querySelector("#story");
+let savebutton = document.querySelector("#button3");
+
+function hideText() {
+    if (cancelbutton.style.display === "none" && textArea.style.display === "none" && savebutton.style.display === "none") {
+        cancelbutton.style.display = "block";
+        textArea.style.display = "block";
+        savebutton.style.display = "block";
+    } else {
+        cancelbutton.style.display = "none";
+        textArea.style.display = "none";
+        savebutton.style.display = "none";
+    }
+}
+
+cancelbutton.addEventListener("click", hideText);
+
+
+
+
