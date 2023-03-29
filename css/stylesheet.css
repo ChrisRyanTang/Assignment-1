@@ -2,7 +2,7 @@
 body {
   font-family: "Raleway", sans-serif;
   background-color: #bd8b9c;
-  color: #105c7b;
+  color: #002d3f;
   display: grid;
 }
 
@@ -126,7 +126,7 @@ button {
 
 /* ***************************NAV******************** */
 .nav-bar {
-  color: #105c7b;
+  color: #002d3f;
 }
 
 .ul1 {
@@ -156,6 +156,16 @@ li {
 }
 
 .navdark {
+  color:whitesmoke;
+}
+
+.textarea-dark {
+  background-color: #18122B;
+  color: whitesmoke;
+  border: solid 2px whitesmoke;
+}
+
+.ul1-dark {
   color:whitesmoke;
 }
 
