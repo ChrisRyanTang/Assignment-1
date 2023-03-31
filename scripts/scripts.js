@@ -3,7 +3,7 @@ let asideDark = document.querySelector("#left-side");
 let navDark = document.querySelector(".nav-bar");
 let textArea = document.querySelector("#story");
 let navbar = document.querySelector(".ul1"); 
-
+let notesbar = document.querySelector(".ul2");
 
 function darkTheme(e) {
     console.log(e)
@@ -64,8 +64,28 @@ function showText(e) {
 noteToggle.addEventListener("click", showText);
 
 
-function newNote(e) {
-    textArea.textContent = '';
+function newNote() {
+    textArea.value = '';
 }
 
 noteToggle.addEventListener("click", newNote);
+
+
+const notesArray = [
+    {title: 'note one', body: 'this is my first note'},
+    {title: 'note two', body: 'this is my second note'}
+]
+
+function saveText() {
+    const newTitle = prompt('Enter the title of the new note: ')
+    const noteList = {title: newTitle, body: textArea.value} 
+    notesArray.push(noteList);
+    const newList = document.createElement('li');
+    newList.textContent = newTitle;
+    notesbar.appendChild(newList);
+}
+
+
+
+
+savebutton.addEventListener('click', saveText);
