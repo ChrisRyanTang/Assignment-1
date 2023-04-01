@@ -86,6 +86,16 @@ function saveText() {
 }
 
 
-
-
 savebutton.addEventListener('click', saveText);
+
+function clickNotes(e) {
+    const targetElement = e.target
+    for(item in notesArray) {
+        if (targetElement.innerHTML === notesArray[item]["title"]) {
+            textArea.value = notesArray[item]['body'];
+        }
+    }
+    console.log(targetElement)
+}
+
+notesbar.addEventListener('click', clickNotes);
